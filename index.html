@@ -87,11 +87,12 @@ section.deep{background:var(--deep)}
 .shots figcaption{color:var(--dim);font-size:12px;text-align:center;margin-top:auto;padding-top:10px;letter-spacing:.02em}
 
 /* ladder */
-.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
+.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
 .ladder figure{margin:0;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column}
-.ladder img{width:100%;border-radius:10px;height:150px;object-fit:cover;object-position:top}
+.ladder img{width:100%;border-radius:10px;height:auto}
 .ladder figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:auto;padding-top:12px;color:var(--dim);font-size:12px}
-.ladder figcaption b{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;color:var(--accent)}
+.ladder figcaption b{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:22px;color:var(--accent)}
+.ladder figcaption span{letter-spacing:.06em;text-transform:uppercase;font-size:11px}
 
 /* chart */
 .chart{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:30px clamp(18px,3vw,34px);overflow-x:auto}
@@ -206,8 +207,8 @@ section.deep{background:var(--deep)}
   .hero{padding:78px 0 46px}
   .ab{grid-template-columns:1fr}
   .shots,.shots.two,.shots.four{grid-template-columns:1fr}
-  .ladder{grid-template-columns:repeat(2,1fr);gap:12px}
-  .ladder figure{padding:10px}
+  .ladder{grid-template-columns:1fr;gap:12px}
+  .ladder figure{padding:12px}
   h1{letter-spacing:.05em}
 }
 </style>
@@ -366,21 +367,28 @@ section.deep{background:var(--deep)}
       <text x="530" y="325" text-anchor="middle" fill="#9E988E" font-size="12" font-family="Mulish">26 авг</text>
       <text x="870" y="325" text-anchor="end" fill="#9E988E" font-size="12" font-family="Mulish">21 сен</text>
       <text x="90" y="350" text-anchor="middle" fill="#6A645B" font-size="12" font-family="Mulish">0</text>
-      <text x="276" y="350" text-anchor="middle" fill="#6A645B" font-size="12" font-family="Mulish">250</text>
+      <text x="276" y="350" text-anchor="middle" fill="#6A645B" font-size="12" font-family="Mulish">222</text>
       <text x="410" y="350" text-anchor="middle" fill="#6A645B" font-size="12" font-family="Mulish">1 002</text>
       <text x="530" y="350" text-anchor="middle" fill="#6A645B" font-size="12" font-family="Mulish">1 900</text>
       <text x="870" y="350" text-anchor="end" fill="#C9B79B" font-size="13" font-weight="600" font-family="Mulish">2 345</text>
     </svg>
   </div>
   <div class="ladder reveal">
-    <figure><img src="img/step-00.jpg" alt="0 подписчиков" loading="lazy"><figcaption><span>1 июля</span><b>0</b></figcaption></figure>
-    <figure><img src="img/step-96.jpg" alt="96 подписчиков" loading="lazy"><figcaption><span>11 июля</span><b>96</b></figcaption></figure>
-    <figure><img src="img/step-250.jpg" alt="250 подписчиков" loading="lazy"><figcaption><span>26 июля</span><b>250</b></figcaption></figure>
-    <figure><img src="img/step-444.jpg" alt="444 подписчика" loading="lazy"><figcaption><span>31 июля</span><b>444</b></figcaption></figure>
-    <figure><img src="img/step-777.jpg" alt="777 подписчиков" loading="lazy"><figcaption><span>6 августа</span><b>777</b></figcaption></figure>
-    <figure><img src="img/step-1002.jpg" alt="1 002 подписчика" loading="lazy"><figcaption><span>9 августа</span><b>1 002</b></figcaption></figure>
-    <figure><img src="img/step-1900.jpg" alt="1 900 подписчиков" loading="lazy"><figcaption><span>26 августа</span><b>1 900</b></figcaption></figure>
-    <figure><img src="img/step-2345.jpg" alt="2 345 подписчиков" loading="lazy"><figcaption><span>21 сентября</span><b>2 345</b></figcaption></figure>
+    <figure><img src="img/step-00.jpg" alt="Профиль: 0 подписчиков" loading="lazy"><figcaption><span>1 июля</span><b>0</b></figcaption></figure>
+    <figure><img src="img/step-222.jpg" alt="Профиль: 222 подписчиков" loading="lazy"><figcaption><span>26 июля</span><b>222</b></figcaption></figure>
+    <figure><img src="img/step-333.jpg" alt="Профиль: 333 подписчиков" loading="lazy"><figcaption><span>29 июля</span><b>333</b></figcaption></figure>
+    <figure><img src="img/step-444.jpg" alt="Профиль: 444 подписчиков" loading="lazy"><figcaption><span>31 июля</span><b>444</b></figcaption></figure>
+    <figure><img src="img/step-500.jpg" alt="Профиль: 500 подписчиков" loading="lazy"><figcaption><span>2 августа</span><b>500</b></figcaption></figure>
+    <figure><img src="img/step-600.jpg" alt="Профиль: 600 подписчиков" loading="lazy"><figcaption><span>5 августа</span><b>600</b></figcaption></figure>
+    <figure><img src="img/step-700.jpg" alt="Профиль: 700 подписчиков" loading="lazy"><figcaption><span>5 августа</span><b>700</b></figcaption></figure>
+    <figure><img src="img/step-777.jpg" alt="Профиль: 777 подписчиков" loading="lazy"><figcaption><span>6 августа</span><b>777</b></figcaption></figure>
+    <figure><img src="img/step-878.jpg" alt="Профиль: 878 подписчиков" loading="lazy"><figcaption><span>8 августа</span><b>878</b></figcaption></figure>
+    <figure><img src="img/step-951.jpg" alt="Профиль: 951 подписчиков" loading="lazy"><figcaption><span>9 августа</span><b>951</b></figcaption></figure>
+    <figure><img src="img/step-1002.jpg" alt="Профиль: 1 002 подписчиков" loading="lazy"><figcaption><span>9 августа</span><b>1 002</b></figcaption></figure>
+    <figure><img src="img/step-1900.jpg" alt="Профиль: 1 900 подписчиков" loading="lazy"><figcaption><span>26 августа</span><b>1 900</b></figcaption></figure>
+    <figure><img src="img/step-2003.jpg" alt="Профиль: 2 003 подписчиков" loading="lazy"><figcaption><span>27 августа</span><b>2 003</b></figcaption></figure>
+    <figure><img src="img/step-2300.jpg" alt="Профиль: 2 300 подписчиков" loading="lazy"><figcaption><span>17 сентября</span><b>2 300</b></figcaption></figure>
+    <figure><img src="img/step-2345.jpg" alt="Профиль: 2 345 подписчиков" loading="lazy"><figcaption><span>21 сентября</span><b>2 345</b></figcaption></figure>
   </div>
 </section>
 
