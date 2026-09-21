@@ -20,14 +20,14 @@ html,body{overflow-x:hidden;width:100%;max-width:100%}
 body{
   background:var(--bg);color:var(--text);
   font-family:Mulish,system-ui,-apple-system,sans-serif;font-weight:300;line-height:1.7;
-  hyphens:none;overflow-wrap:break-word;
+  hyphens:none;word-break:normal;overflow-wrap:normal;
   background-image:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(201,183,155,.07),transparent 70%);
   background-attachment:fixed;
 }
 ::selection{background:var(--accent);color:#0B0B0C}
 img{max-width:100%;display:block}
 .wrap{max-width:1080px;margin:0 auto;padding:0 26px}
-h1{font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--bright);line-height:1.06;letter-spacing:.1em;text-transform:uppercase;font-size:clamp(38px,7.4vw,74px)}
+h1{font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--bright);line-height:1.06;text-wrap:balance;letter-spacing:.1em;text-transform:uppercase;font-size:clamp(34px,6.6vw,70px)}
 h2{font-family:'Cormorant Garamond',serif;font-weight:300;color:var(--bright);font-size:clamp(27px,4.2vw,44px);line-height:1.15;text-wrap:balance}
 h3{font-family:'Cormorant Garamond',serif;font-weight:400;color:var(--bright);font-size:clamp(20px,2.6vw,26px);line-height:1.25}
 .eyebrow{font-size:11px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:18px}
@@ -84,7 +84,7 @@ section.deep{background:var(--deep)}
 .shots img{width:100%;border-radius:14px;border:1px solid var(--line)}
 .shots.eq img{height:330px;object-fit:contain;object-position:center;background:#0E0E10;padding:8px}
 
-.shots figcaption{color:var(--dim);font-size:12px;text-align:center;margin-top:auto;padding-top:10px;letter-spacing:.02em}
+.shots figcaption{color:var(--dim);font-size:12px;text-align:center;margin-top:auto;padding-top:10px;letter-spacing:.02em;text-wrap:pretty;hyphens:none}
 
 /* ladder */
 .ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
@@ -156,7 +156,7 @@ section.deep{background:var(--deep)}
 .aud .track{height:10px;border-radius:5px;background:var(--line);overflow:hidden}
 .aud .track i{display:block;height:100%;border-radius:5px;background:var(--accent)}
 .niches{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-.niches span{border:1px solid var(--line-b);border-radius:999px;padding:8px 16px;color:#CFC9C0;font-size:13.5px}
+.niches span{border:1px solid var(--line-b);border-radius:999px;padding:8px 16px;color:#CFC9C0;font-size:13.5px;overflow-wrap:anywhere}
 .niches span i{color:var(--accent);font-style:normal}
 
 /* notes */
@@ -218,7 +218,7 @@ section.deep{background:var(--deep)}
 <div class="wrap">
   <header class="hero">
     <span class="eyebrow">Кейс · Георгий Ш · @georgiy_gs</span>
-    <h1>Блог с нуля<br>за три месяца</h1>
+    <h1>Блог с нуля за три месяца</h1>
     <div class="slogan">предприниматель, стройка, госконтракты</div>
     <p class="meta">11 июня — 21 сентября 2026 · Малик Хашимов</p>
     <div class="hdiv"></div>
@@ -292,7 +292,7 @@ section.deep{background:var(--deep)}
 <section id="account" class="deep">
   <div class="section-head reveal">
     <span class="eyebrow">Аккаунт за 90 дней</span>
-    <h2>Сводка по всему<br>периоду работы</h2>
+    <h2>Сводка по всему периоду работы</h2>
     <p>23 июня — 20 сентября 2026, данные из профессиональной панели аккаунта.</p>
   </div>
   <div class="kpi reveal">
@@ -391,7 +391,7 @@ section.deep{background:var(--deep)}
 <section id="method">
   <div class="section-head reveal">
     <span class="eyebrow">Метод</span>
-    <h2>Это не «снимали рилсы».<br>Это система</h2>
+    <h2>Это не «снимали рилсы». Это система</h2>
     <p>Восемь слоёв, без которых следующий не работает. Первый месяц ушёл на фундамент — и именно поэтому второй и третий дали рост.</p>
   </div>
   <div class="method">
@@ -449,7 +449,7 @@ section.deep{background:var(--deep)}
 <section id="timeline" class="deep">
   <div class="section-head reveal">
     <span class="eyebrow">Хронология</span>
-    <h2>Три месяца<br>по месяцам</h2>
+    <h2>Три месяца по месяцам</h2>
   </div>
   <div class="tl">
     <div class="t reveal">
@@ -499,7 +499,7 @@ section.deep{background:var(--deep)}
 <section id="viral">
   <div class="section-head reveal">
     <span class="eyebrow">Хиты</span>
-    <h2>Ролики, которые<br>вынесли блог</h2>
+    <h2>Ролики, которые вынесли блог</h2>
     <p>Все цифры — из статистики Reels, снятой 15 сентября.</p>
   </div>
   <div class="viral">
@@ -549,16 +549,16 @@ section.deep{background:var(--deep)}
     <li><b>Ролики не выгорают.</b> Четыре ролика второго месяца за следующие 30 дней добрали ещё 169 тысяч просмотров — уже после того, как «отработали».</li>
   </div>
   <div class="shots tall reveal">
-    <figure><img src="img/top-goskontrakt.jpg" alt="Как заканчивается госконтракт" loading="lazy"><figcaption>«Как заканчивается госконтракт» · 6 400</figcaption></figure>
-    <figure><img src="img/top-pechat.jpg" alt="Не хватало денег на печать" loading="lazy"><figcaption>«Не хватало денег на печать» · 6 748</figcaption></figure>
-    <figure><img src="img/top-kachestva.jpg" alt="Качества богатых и бедных людей" loading="lazy"><figcaption>«Качества богатых и бедных людей» · 4 961</figcaption></figure>
+    <figure><img src="img/top-goskontrakt.jpg" alt="Как заканчивается госконтракт" loading="lazy"><figcaption>«Как заканчивается госконтракт» · 6 400 · +24</figcaption></figure>
+    <figure><img src="img/top-schastye.jpg" alt="Счастье не в деньгах" loading="lazy"><figcaption>«Счастье не в деньгах» · 12 264 · +20</figcaption></figure>
+    <figure><img src="img/top-goszakupka.jpg" alt="Госзакупка глазами подрядчика" loading="lazy"><figcaption>«Госзакупка глазами подрядчика» · 3 792 · +22</figcaption></figure>
   </div>
 </section>
 
 <section id="engagement" class="deep">
   <div class="section-head reveal">
     <span class="eyebrow">Вовлечение</span>
-    <h2>Что аудитория<br>делает с роликами</h2>
+    <h2>Что аудитория делает с роликами</h2>
     <p>Посчитано вручную по статистике каждого из 80 роликов — не оценка, а сумма реальных цифр из Instagram.</p>
   </div>
   <div class="kpi reveal">
@@ -580,7 +580,7 @@ section.deep{background:var(--deep)}
 <section id="subs">
   <div class="section-head reveal">
     <span class="eyebrow">Конверсия</span>
-    <h2>Подписки приходят<br>с каждого ролика</h2>
+    <h2>Подписки приходят с каждого ролика</h2>
     <p>Строка «Подписки» — прямо из статистики Reels. Это не просмотры ради просмотров: человек смотрит ролик и остаётся в блоге. Скриншоты сняты 9 августа и 15 сентября — ролики с тех пор добрали ещё.</p>
   </div>
   <div class="shots reveal">
@@ -602,7 +602,7 @@ section.deep{background:var(--deep)}
 <section id="audience" class="deep">
   <div class="section-head reveal">
     <span class="eyebrow">Аудитория</span>
-    <h2>Пришли ровно те,<br>кто был нужен</h2>
+    <h2>Пришли ровно те, кто был нужен</h2>
     <p>Задача была собрать мужчин-предпринимателей. Вот кто в итоге подписался.</p>
   </div>
   <div class="aud">
@@ -640,7 +640,7 @@ section.deep{background:var(--deep)}
 <section id="business">
   <div class="section-head reveal">
     <span class="eyebrow">Бизнес-результат</span>
-    <h2>Блог начал приносить<br>входящие по бизнесу</h2>
+    <h2>Блог начал приносить входящие по бизнесу</h2>
     <p>Это не «лайки и охваты». Это реальные запросы, которые приходят в личные сообщения от людей, посмотревших ролики. Ники и аватарки скрыты.</p>
   </div>
   <div class="dm">
@@ -663,7 +663,7 @@ section.deep{background:var(--deep)}
 <section id="reaction" class="deep">
   <div class="section-head reveal">
     <span class="eyebrow">Реакция клиента</span>
-    <h2>Как это выглядит<br>изнутри работы</h2>
+    <h2>Как это выглядит изнутри работы</h2>
     <p>Реакции Георгия на материалы — просто переписка по ходу проекта.</p>
   </div>
   <div class="quote reveal">
@@ -683,7 +683,7 @@ section.deep{background:var(--deep)}
 <section id="offer">
   <div class="section-head reveal">
     <span class="eyebrow">Работа со мной</span>
-    <h2>Как я могу помочь<br>Вам выстроить блог</h2>
+    <h2>Как я могу помочь Вам выстроить блог</h2>
     <p>Начинаем всегда одинаково: с аудита. Без него не берусь — сначала нужно понять, что происходит с Вашим блогом сейчас.</p>
   </div>
   <div class="offer">
