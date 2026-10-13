@@ -166,19 +166,6 @@ section.deep{background:var(--deep)}
 .notes li::before{content:'—';position:absolute;left:0;color:var(--accent)}
 .notes li b{color:var(--bright);font-weight:500}
 
-/* offer */
-.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
-.offer .o{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:32px 28px;display:flex;flex-direction:column}
-.offer .o .t{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);font-weight:600}
-.offer .o h3{margin:14px 0 10px}
-.offer .o p{color:var(--mute);font-size:14.5px;flex:1}
-.offer .o .price{font-family:'Cormorant Garamond',serif;font-size:32px;color:var(--accent);margin-top:22px;line-height:1}
-.audit{margin-top:22px;background:linear-gradient(180deg,rgba(201,183,155,.07),var(--soft));border:1px solid var(--accent-d);border-radius:20px;padding:clamp(28px,4vw,44px)}
-.audit .head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;flex-wrap:wrap}
-.audit .price{font-family:'Cormorant Garamond',serif;font-size:38px;color:var(--accent);line-height:1}
-.audit ul{margin-top:22px}
-.audit li{list-style:none;color:#D6D1C8;font-size:15px;padding:9px 0 9px 24px;position:relative}
-.audit li::before{content:'—';position:absolute;left:0;color:var(--accent)}
 .contacts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px}
 .contacts a{display:block;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:22px;text-decoration:none;transition:border-color .2s}
 .contacts a:hover{border-color:var(--accent-d)}
@@ -196,8 +183,7 @@ section.deep{background:var(--deep)}
   .viral,.kpi{grid-template-columns:1fr}
   .shots,.shots.four{grid-template-columns:repeat(2,1fr)}
   .ladder{grid-template-columns:repeat(2,1fr)}
-  .offer{grid-template-columns:1fr}
-  .contacts{grid-template-columns:repeat(2,1fr)}
+    .contacts{grid-template-columns:repeat(2,1fr)}
   .reacts{grid-template-columns:1fr}
 }
 @media(max-width:560px){
@@ -680,47 +666,10 @@ section.deep{background:var(--deep)}
   </div>
 </section>
 
-<section id="offer">
+<section id="contacts">
   <div class="section-head reveal">
-    <span class="eyebrow">Работа со мной</span>
-    <h2>Как я могу помочь Вам выстроить блог</h2>
-    <p>Начинаем всегда одинаково: с аудита. Без него не берусь — сначала нужно понять, что происходит с Вашим блогом сейчас.</p>
-  </div>
-  <div class="offer">
-    <div class="o reveal">
-      <div class="t">Формат 1</div>
-      <h3>Сопровождение</h3>
-      <p>Месяц работы над блогом вместе: стратегия, темы, форматы, съёмки, публикации, отчёт по цифрам.</p>
-      <div class="price">от 130 000 ₽</div>
-    </div>
-    <div class="o reveal">
-      <div class="t">Формат 2</div>
-      <h3>Личная работа</h3>
-      <p>Выстраиваем личный бренд полностью: от позиционирования до системы производства контента и результата в бизнесе.</p>
-      <div class="price">от 300 000 ₽</div>
-    </div>
-    <div class="o reveal">
-      <div class="t">С чего начинаем</div>
-      <h3>Аудит блога</h3>
-      <p>Разбор того, что происходит сейчас, и дорожная карта. Засчитываю в стоимость, если после аудита продолжаем работу.</p>
-      <div class="price">20 000 ₽</div>
-    </div>
-  </div>
-  <div class="audit reveal">
-    <div class="head">
-      <h3 style="font-size:clamp(22px,3vw,30px)">Что входит в аудит</h3>
-      <div class="price">20 000 ₽</div>
-    </div>
-    <ul>
-      <li>Глубокий анализ того, что сейчас происходит с Вашим блогом</li>
-      <li>Что бы я делал на Вашем месте: видение и конкретные шаги</li>
-      <li>Дорожная карта развития</li>
-      <li>План возможной совместной работы</li>
-    </ul>
-    <p style="color:var(--mute);font-size:15px;margin-top:22px">
-      <b style="color:var(--bright);font-weight:500">Что нужно от Вас:</b> ссылка на Instagram и скриншоты статистики профиля.<br>
-      <b style="color:var(--bright);font-weight:500">Результат:</b> через 3 дня — документ с разбором и созвон, на котором мы по нему пройдёмся.
-    </p>
+    <span class="eyebrow">Контакты</span>
+    <h2>Связаться</h2>
   </div>
   <div class="contacts">
     <a href="https://t.me/mhashimov_23" target="_blank" rel="noopener"><div class="t">Telegram</div><div class="v">@mhashimov_23</div></a>
